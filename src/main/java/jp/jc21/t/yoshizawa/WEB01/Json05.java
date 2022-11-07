@@ -34,10 +34,9 @@ public class Json05 {
 		src.documents[0] = doc;
 
 		String jsonData = new Gson().toJson(src);
-
 		InetSocketAddress proxy = new InetSocketAddress("172.17.0.2", 80);
 
-		JsonReader reader = WebApiConnector.postJsonReader(url, proxy, map, jsonData);
+		JsonReader reader = WebApiConnector.postJsonReader(url, proxy,map, jsonData);
 		Language message = null;
 		if (reader != null) {
 			message = gson.fromJson(reader, Language.class);

@@ -11,14 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LanguageRequestServlet
  */
-@WebServlet("/languageRequest")
-public class LanguageRequestServlet extends HttpServlet {
+@WebServlet("/SentimentRequest")
+public class SentimentRequestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public LanguageRequestServlet() {
+	public SentimentRequestServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -29,7 +29,7 @@ public class LanguageRequestServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.getRequestDispatcher("/WEB-INF/jsp/languageRequest.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/jsp/Sentiment.jsp").forward(request, response);
 	}
 
 }
