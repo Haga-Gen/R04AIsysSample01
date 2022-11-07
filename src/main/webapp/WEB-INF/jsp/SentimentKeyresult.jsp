@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <%
-	Object o = request.getAttribute("message");
-	float message = (float)o;
-	Object o2 = request.getAttribute("message2");
-	float message2 = (float)o;
-	Object o3 = request.getAttribute("message3");
-	float message3 = (float)o;
+	float message = 
+	(float) request.getAttribute("message");
+	float message2 = 
+	(float) request.getAttribute("message2");
+	float message3 = 
+	(float) request.getAttribute("message3");
 	String string = 
 			request.getParameter("string");
 %>
