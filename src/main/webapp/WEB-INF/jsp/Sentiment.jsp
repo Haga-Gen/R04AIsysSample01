@@ -8,7 +8,10 @@
 </head>
 
 <body>
-<h1>CognitiveServiceを使うサイト</h1>
+<header>
+<a href="./languageRequest">DetectedLanguage</a>
+</header>
+<h1>Sentimentを使うサイト</h1>
 
 <h3>調べたい文字列を教えてください</h3>
 <form method="POST" action="./sresult">
